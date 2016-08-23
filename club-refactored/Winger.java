@@ -1,0 +1,3 @@
+class Winger implements Playable{
+
+}

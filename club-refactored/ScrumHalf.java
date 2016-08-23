@@ -1,0 +1,3 @@
+class ScrumHalf implements Playable {
+  
+}

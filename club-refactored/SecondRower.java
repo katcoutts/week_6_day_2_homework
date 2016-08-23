@@ -1,0 +1,3 @@
+class SecondRower implements Playable {
+  
+}

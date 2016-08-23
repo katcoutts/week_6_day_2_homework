@@ -1,0 +1,3 @@
+class Prop implements Playable{
+  
+}

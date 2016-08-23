@@ -1,0 +1,3 @@
+class LooseForward implements Playable {
+  
+}

@@ -1,0 +1,3 @@
+class Hooker implements Playable {
+  
+}
