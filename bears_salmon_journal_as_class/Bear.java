@@ -54,6 +54,14 @@ public class Bear{
     }
     return counter;
   }
+
+  public Journal getJournal(){
+    return journal;
+  }
+
+  public void setJournal(Journal journal){
+    this.journal = journal;
+  }
   
 
 }
