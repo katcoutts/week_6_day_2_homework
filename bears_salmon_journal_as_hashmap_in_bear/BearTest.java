@@ -100,4 +100,9 @@ public class BearTest{
     assertEquals(2, i);
   }
 
+  @Test
+  public void returnsZeroIfNoFoodEatenOnADay(){
+    assertEquals(0, bear.readJournal("tuesday"));
+  }
+
 }

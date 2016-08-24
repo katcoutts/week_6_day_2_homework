@@ -13,7 +13,7 @@ public class Journal{
   }
 
   public int getADaysCount(String day){
-    return entries.get(day);
+    return entries.getOrDefault(day, 0);
   }
 
 }

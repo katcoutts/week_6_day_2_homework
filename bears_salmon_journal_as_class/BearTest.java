@@ -1,15 +1,19 @@
 import static org.junit.Assert.*;
 import org.junit.*;
+import org.junit.Before;
+
 
 public class BearTest{
   Bear bear;
   Salmon salmon;
   Human human;
   Chicken chicken;
+  Journal journal;
 
   @Before 
   public void before() {
-    bear = new Bear("Baloo");
+    bear = new Bear("Baloo", journal);
+    journal = new Journal();
     salmon = new Salmon(); 
     human = new Human();
     chicken = new Chicken();

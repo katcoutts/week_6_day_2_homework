@@ -31,7 +31,7 @@ public class Bear{
   }
 
   public int readJournal(String day){
-    return journal.get(day);
+    return journal.getOrDefault(day, 0);
   }
 
   public void sleep(){

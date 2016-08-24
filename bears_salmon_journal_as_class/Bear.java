@@ -7,12 +7,12 @@ public class Bear{
   private Journal journal; 
 
 
-  public Bear(String name){
+  public Bear(String name, Journal journal){
     this.name = name;
     // we're saying anything that implements the Edible interface can be added to our belly ArrayList.
     // as we're adding our salmon and human's as Edibles we can't call any methods that the human and salmon have - we can only call methods that Edibles have - that's why you might list methods in the interface.
     this.belly = new ArrayList<Edible>();
-    this.journal = new Journal();
+    this.journal = journal;
   }
 
   public String getName(){
