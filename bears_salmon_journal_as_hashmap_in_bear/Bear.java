@@ -24,6 +24,8 @@ public class Bear{
   }
 
   public void eat(Edible food, String day){
+    // ALSO SEE THE INSTRUCTOR SOLUTION WHICH IS VERY SIMILAR BAR METHOD WHICH IS ACTUALLY EASIER TO UNDERSTAND THAN BELOW. BROKEN DOWN MORE.
+    // nb WE DON'T NEED TO HAVE this. IN FRONT OF THE BELLY AND JOURNAL AS THE PARAMETERS WE'RE PASSING IN ARE NOT THE SAME DAY. IF THEY HAD BEEN WE WOULD HAVE HAD TO SPECIFY WITH A this. THING BELOW.
     belly.add(food); 
     journal.put(day, journal.getOrDefault(day, 0) + 1);
 
@@ -31,6 +33,7 @@ public class Bear{
   }
 
   public int readJournal(String day){
+    // nb the below default thing means that if the day we're searching on we never ate anything rather than it being null we'll get back a default of 0.
     return journal.getOrDefault(day, 0);
   }
 
